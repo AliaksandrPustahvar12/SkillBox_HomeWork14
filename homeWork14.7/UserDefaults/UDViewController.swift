@@ -14,10 +14,10 @@ class UDViewController: UIViewController {
     @IBOutlet var saveButton: UIButton!
     
     @IBAction func saveInfo(_ sender: UIButton) {
-        let savedName = nameTF.text
-        PersistanceUD.shared.name = savedName
-        let savedSurname = surnameTF.text
-        PersistanceUD.shared.surname = savedSurname
+        let nameToSave = nameTF.text
+        PersistanceUD.shared.name = nameToSave
+        let surnameToSave = surnameTF.text
+        PersistanceUD.shared.surname = surnameToSave
         navigationController?.popToRootViewController(animated: true)
     }
     override func viewDidLoad() {
